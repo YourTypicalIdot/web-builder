@@ -10,11 +10,9 @@
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
     <div class="wrapper">
         {% include "_html/_base/_includes/_header.html" %}
-
-        <div class="main">
-          {% block content %}{% endblock %}
-        </div>
-        {% include "_html/_base/_includes/_footer.html" %}
+        {% include "_html/_base/_includes/_header2.html" %}
+        {% include "_html/_base/_includes/_blackguy.html" %}
+        {% include "_html/_base/_includes/_appointment.html" %}
     </div>
     <script src="assets/js/app.min.js"></script>
 </body>

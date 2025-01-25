@@ -37,3 +37,80 @@
     }
   }
 }
+
+// header2
+
+.header2 {
+  background-color: $primary;
+  display: flex;
+  flex-direction: row;
+  padding: 17px 186px;
+  justify-content: space-between;
+  align-items: center;
+  &_left {
+    display: flex;
+    gap: 20px;
+    font-family: "Work sans";
+    font-weight: 400;
+    color: $white;
+  }
+  &_right {
+    display: flex;
+    gap: 30px;
+    &_item {
+      font-family: "Work sans";
+      font-weight: 600;
+      background-color: $accent;
+      color: $primary;
+      padding: 13px 35px;
+      border-radius: 50px;
+    }
+  }
+}
+
+// ourservices and blackguy
+
+.services {
+  height: 550px;
+  background-color: $grayish;
+  background-image: url(../img/blackguy.png), url(../img/spheres.png), url(../img/servicebg.png);
+  background-size: cover;
+  display: flex;
+  padding: 0 186px;
+  align-items: center;
+  &_cont {
+    width: 519px;
+    font-family: "Work sans";
+    &_caring {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 18px;
+      color: $secondary;
+    }
+    &_leading {
+      padding: 8px 0 32px 0;
+      font-size: 48px;
+      font-family: "Yeseva One";
+      font-weight: 500;
+      color: $primary;
+    }
+    &_our {
+      background-color: $accent;
+      font-weight: 500;
+      border-radius: 50px;
+      width: 170px;
+      color: $primary;
+      padding: 13px 35px;
+    }
+  }
+}
+
+.appoint {
+  display: flex;
+  gap: 20px;
+  * {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+}
