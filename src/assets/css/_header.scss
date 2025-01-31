@@ -1,3 +1,22 @@
+// titles for stuf
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.title_blue{
+  color: #159EEC;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.title_black{
+  font-family: "Yeseva one";
+  font-size: 32px;
+}
+
 .header{
   &__top{
     display: flex;
@@ -107,10 +126,134 @@
 
 .appoint {
   display: flex;
+  justify-content: center;
   gap: 20px;
-  * {
+  margin: auto;
+  width: 992px;
+  height: 100px;
+  position:relative;
+  top: -50px;
+  &_1 {
+    color:#FCFEFE;
+    background-color:#1F2B6C;
+  }
+  &_2 {
+    color:#1F2B6C;
+    background-color:#BFD2F8;
+  }
+  &_3 {
+    color:#FCFEFE;
+    background-color:#159EEC;
+  }
+}
+
+.appoint > * {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding: 25px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 526px;
+  gap: 61px;
+  font-family: "Work sans";
+  &_the{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 56px;
+    width: 658px;
+    &_1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      &_blue{
+        color: #159EEC;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      &_black{
+        font-family: "Yeseva one";
+        font-size: 32px;
+      }
+    }
+    &_2{padding: 15px 0 32px 0;}
+    &_3{
+      display: flex;
+      align-items: center;
+      gap: 10px ;
+      a {
+        color: #159EEC;
+        text-decoration-line: none;
+      }
+      svg path {stroke: black;}
+    }
+  }
+}
+
+.caring{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work sans";
+  height: 774px;
+  &_cont{
+    width: 992px;
+    height: 646px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    &_1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      &_blue{
+        color: #159EEC;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      &_black{
+        font-family: "Yeseva one";
+        font-size: 32px;
+      }
+    }
+    &_2{
+      display: grid;
+      grid-template: repeat(3, 172px) / repeat(4, 248px);
+      &_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        svg path{
+          stroke: $secondary;
+        }
+        div{
+          color: black;
+        }
+      }
+      &_item:hover{
+        background-color: $primary;
+        svg path{
+          stroke: $accent;
+        }
+        div{
+          color: $accent;
+        }
+      }
+    }
   }
 }
