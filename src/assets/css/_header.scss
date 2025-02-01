@@ -211,6 +211,47 @@
       svg path {stroke: black;}
     }
   }
+  &_img{
+    width: 992px;
+    height: 250px;
+    background-image: url(../img/blackdoctors_decor.png), url(../img/blackdoctors.png);
+  }
+}
+
+.believe{
+  padding: 64px;
+  font-family: "Work sans";
+  &_cont{
+    margin: auto;
+    width: 992px;
+    height: 484px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_grid{
+      display: grid;
+      border: 1px solid $primary;
+      border-radius: 5px;
+      grid-template: repeat(4, 106px) 40px / 157px;
+      &_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        svg path {
+          fill: #159EEC;
+        }
+        &:hover{
+          background-color: #1F2B6C;
+          color: #BFD2F8;
+          svg path {
+            fill: $accent
+          }
+        }
+      }
+    }
+  }
 }
 
 .caring{
@@ -252,7 +293,7 @@
         align-items: center;
         border-radius: 5px;
         svg path{
-          stroke: $secondary;
+          fill: $secondary;
         }
         div{
           color: black;
@@ -261,7 +302,7 @@
       &_item:hover{
         background-color: $primary;
         svg path{
-          stroke: $accent;
+          fill: $accent;
         }
         div{
           color: $accent;
