@@ -71,7 +71,10 @@
     gap: 20px;
     font-family: "Work sans";
     font-weight: 400;
-    color: $white;
+    &_item {
+      color: $white;
+      text-decoration: none;
+    }
   }
   &_right {
     display: flex;
@@ -260,6 +263,48 @@
         }
         div{
           color: $accent;
+        }
+      }
+    }
+  }
+}
+
+.intouch{
+  height: 491px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:64px;
+  font-family: "Work sans";
+  &_cont{
+    display: flex;
+    justify-content: space-between;
+    width: 992px;
+    height: 233px;
+    &_item{
+      background-color: $accent;
+      color: $primary;
+      width: 233px;
+      height: 233px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 5px;
+      padding: 23px;
+      gap: 5px;
+      svg path {
+        stroke:$primary;
+      }
+      &_bold{
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      &:hover{
+        background-color: $primary;
+        color: $accent;
+        svg path {
+          stroke: $accent;
         }
       }
     }
