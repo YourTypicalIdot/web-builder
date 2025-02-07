@@ -218,21 +218,22 @@
   }
 }
 
+// me when i am in bs competition and my opponent is this
 .believe{
   padding: 64px;
   font-family: "Work sans";
   &_cont{
-    margin: auto;
+    margin: 64px auto 0 auto;
     width: 992px;
     height: 484px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 20px;
     &_grid{
       display: grid;
       border: 1px solid $primary;
       border-radius: 5px;
-      grid-template: repeat(4, 106px) 40px / 157px;
+      grid-template: repeat(4, 1fr) 40px/157px;
       &_item{
         display: flex;
         flex-direction: column;
@@ -250,6 +251,29 @@
           }
         }
       }
+    }
+    &_list{
+      font-family: "Work sans";
+      margin: 27px 0;
+      width: 470px;
+      ul {
+        width: 415px;
+        height: 107px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        margin: 24px 0 32px 0;
+        li{
+          margin: 4px;
+        }
+      }
+      &_yap{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+      }
+    }
+    &_img{
+      width: 324px;
     }
   }
 }
