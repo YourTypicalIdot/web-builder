@@ -425,6 +425,9 @@
         color: $primary;
       }
     }
+    & option {
+      background-color: #1F2B6C;
+    }
   }
 }
 
@@ -660,5 +663,18 @@
         gap: 20px;
       }
     }
+  }
+}
+
+/* гг */
+@media (max-width: 991px) {
+  .wrapper{
+    width: 395px;
+  }
+  * {
+    max-width: 395px;
+  }
+  .header__top__list {
+    width: 395px;
   }
 }
